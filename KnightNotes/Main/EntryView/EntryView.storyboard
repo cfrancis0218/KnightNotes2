@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Entry View Controller-->
+        <scene sceneID="yWw-yJ-XnM">
+            <objects>
+                <viewController storyboardIdentifier="new" id="znI-Q0-bsA" customClass="EntryViewController" customModule="KnightNotes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YAR-ON-NQc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uMG-Ro-S60">
+                                <rect key="frame" x="10" y="54" width="394" height="52"/>
+                                <color key="backgroundColor" red="0.94572013619999995" green="0.93867152929999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="fU6-8D-7RO"/>
+                                </constraints>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="yes" spellCheckingType="yes"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="black" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ltd-cl-z23">
+                                <rect key="frame" x="10" y="116" width="394" height="736"/>
+                                <color key="backgroundColor" red="0.95254057650000001" green="0.9455298781" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="yes" spellCheckingType="yes"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93547028300000001" green="0.92836385970000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="uMG-Ro-S60" firstAttribute="width" secondItem="Ltd-cl-z23" secondAttribute="width" id="2Av-fL-tuz"/>
+                            <constraint firstItem="Tb2-MF-2sK" firstAttribute="bottom" secondItem="Ltd-cl-z23" secondAttribute="bottom" constant="10" id="CE7-uy-t3c"/>
+                            <constraint firstItem="Tb2-MF-2sK" firstAttribute="trailing" secondItem="uMG-Ro-S60" secondAttribute="trailing" constant="10" id="cQ7-Ss-16F"/>
+                            <constraint firstItem="uMG-Ro-S60" firstAttribute="leading" secondItem="Tb2-MF-2sK" secondAttribute="leading" constant="10" id="fOb-62-yMl"/>
+                            <constraint firstItem="Ltd-cl-z23" firstAttribute="top" secondItem="uMG-Ro-S60" secondAttribute="bottom" constant="10" id="gKY-JI-Mvh"/>
+                            <constraint firstItem="Ltd-cl-z23" firstAttribute="leading" secondItem="Tb2-MF-2sK" secondAttribute="leading" constant="10" id="lbJ-7a-Snr"/>
+                            <constraint firstItem="uMG-Ro-S60" firstAttribute="top" secondItem="Tb2-MF-2sK" secondAttribute="top" constant="10" id="pxK-Kk-Wud"/>
+                            <constraint firstItem="Tb2-MF-2sK" firstAttribute="trailing" secondItem="Ltd-cl-z23" secondAttribute="trailing" constant="10" id="r7U-1Y-e9g"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Tb2-MF-2sK"/>
+                    </view>
+                    <connections>
+                        <outlet property="noteField" destination="Ltd-cl-z23" id="Om2-6u-BOC"/>
+                        <outlet property="titleField" destination="uMG-Ro-S60" id="VTJ-fx-j8F"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DuP-wh-rNj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="97" y="159"/>
+        </scene>
+    </scenes>
+</document>

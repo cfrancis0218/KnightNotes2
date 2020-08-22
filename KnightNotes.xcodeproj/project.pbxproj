@@ -13,6 +13,14 @@
 		5349CB3E24EDFF80005EF19E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5349CB3C24EDFF80005EF19E /* Main.storyboard */; };
 		5349CB4024EDFF81005EF19E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5349CB3F24EDFF81005EF19E /* Assets.xcassets */; };
 		5349CB4324EDFF81005EF19E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5349CB4124EDFF81005EF19E /* LaunchScreen.storyboard */; };
+		5349CB4D24EE01DA005EF19E /* EntryView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5349CB4C24EE01DA005EF19E /* EntryView.storyboard */; };
+		5349CB4F24EE01EC005EF19E /* NotesView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5349CB4E24EE01EC005EF19E /* NotesView.storyboard */; };
+		5349CB5324EE0242005EF19E /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5349CB5224EE0242005EF19E /* EntryViewController.swift */; };
+		5349CB5624EE025A005EF19E /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5349CB5524EE025A005EF19E /* NotesViewController.swift */; };
+		5349CB5A24EE02DC005EF19E /* HomePageView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5349CB5924EE02DC005EF19E /* HomePageView.storyboard */; };
+		5349CB5C24EE02E9005EF19E /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5349CB5B24EE02E9005EF19E /* HomePageViewController.swift */; };
+		53D1D89324F077450005410D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D1D89224F077450005410D /* LoginViewController.swift */; };
+		53D1D89524F0774D0005410D /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53D1D89424F0774D0005410D /* Login.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		5349CB3F24EDFF81005EF19E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5349CB4224EDFF81005EF19E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5349CB4424EDFF81005EF19E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5349CB4C24EE01DA005EF19E /* EntryView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EntryView.storyboard; sourceTree = "<group>"; };
+		5349CB4E24EE01EC005EF19E /* NotesView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NotesView.storyboard; sourceTree = "<group>"; };
+		5349CB5224EE0242005EF19E /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
+		5349CB5524EE025A005EF19E /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
+		5349CB5924EE02DC005EF19E /* HomePageView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomePageView.storyboard; sourceTree = "<group>"; };
+		5349CB5B24EE02E9005EF19E /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		53D1D89224F077450005410D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		53D1D89424F0774D0005410D /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +74,69 @@
 			children = (
 				5349CB3624EDFF80005EF19E /* AppDelegate.swift */,
 				5349CB3824EDFF80005EF19E /* SceneDelegate.swift */,
-				5349CB3A24EDFF80005EF19E /* ViewController.swift */,
-				5349CB3C24EDFF80005EF19E /* Main.storyboard */,
+				5349CB5024EE01F3005EF19E /* Main */,
 				5349CB3F24EDFF81005EF19E /* Assets.xcassets */,
 				5349CB4124EDFF81005EF19E /* LaunchScreen.storyboard */,
 				5349CB4424EDFF81005EF19E /* Info.plist */,
 			);
 			path = KnightNotes;
+			sourceTree = "<group>";
+		};
+		5349CB5024EE01F3005EF19E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				53D1D89124F0772E0005410D /* Account */,
+				5349CB5124EE0217005EF19E /* MainView */,
+				5349CB5824EE02C8005EF19E /* HomePageView */,
+				5349CB5424EE0246005EF19E /* EntryView */,
+				5349CB5724EE025D005EF19E /* NotesView */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		5349CB5124EE0217005EF19E /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				5349CB3C24EDFF80005EF19E /* Main.storyboard */,
+				5349CB3A24EDFF80005EF19E /* ViewController.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		5349CB5424EE0246005EF19E /* EntryView */ = {
+			isa = PBXGroup;
+			children = (
+				5349CB4C24EE01DA005EF19E /* EntryView.storyboard */,
+				5349CB5224EE0242005EF19E /* EntryViewController.swift */,
+			);
+			path = EntryView;
+			sourceTree = "<group>";
+		};
+		5349CB5724EE025D005EF19E /* NotesView */ = {
+			isa = PBXGroup;
+			children = (
+				5349CB4E24EE01EC005EF19E /* NotesView.storyboard */,
+				5349CB5524EE025A005EF19E /* NotesViewController.swift */,
+			);
+			path = NotesView;
+			sourceTree = "<group>";
+		};
+		5349CB5824EE02C8005EF19E /* HomePageView */ = {
+			isa = PBXGroup;
+			children = (
+				5349CB5924EE02DC005EF19E /* HomePageView.storyboard */,
+				5349CB5B24EE02E9005EF19E /* HomePageViewController.swift */,
+			);
+			path = HomePageView;
+			sourceTree = "<group>";
+		};
+		53D1D89124F0772E0005410D /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				53D1D89224F077450005410D /* LoginViewController.swift */,
+				53D1D89424F0774D0005410D /* Login.storyboard */,
+			);
+			path = Account;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +197,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5349CB4D24EE01DA005EF19E /* EntryView.storyboard in Resources */,
+				5349CB5A24EE02DC005EF19E /* HomePageView.storyboard in Resources */,
+				53D1D89524F0774D0005410D /* Login.storyboard in Resources */,
 				5349CB4324EDFF81005EF19E /* LaunchScreen.storyboard in Resources */,
+				5349CB4F24EE01EC005EF19E /* NotesView.storyboard in Resources */,
 				5349CB4024EDFF81005EF19E /* Assets.xcassets in Resources */,
 				5349CB3E24EDFF80005EF19E /* Main.storyboard in Resources */,
 			);
@@ -138,7 +214,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53D1D89324F077450005410D /* LoginViewController.swift in Sources */,
 				5349CB3B24EDFF80005EF19E /* ViewController.swift in Sources */,
+				5349CB5624EE025A005EF19E /* NotesViewController.swift in Sources */,
+				5349CB5C24EE02E9005EF19E /* HomePageViewController.swift in Sources */,
+				5349CB5324EE0242005EF19E /* EntryViewController.swift in Sources */,
 				5349CB3724EDFF80005EF19E /* AppDelegate.swift in Sources */,
 				5349CB3924EDFF80005EF19E /* SceneDelegate.swift in Sources */,
 			);

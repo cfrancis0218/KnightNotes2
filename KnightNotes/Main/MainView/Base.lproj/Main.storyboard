@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="KnightNotes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="KnightNotes" translatesAutoresizingMaskIntoConstraints="NO" id="vxg-N2-hC0">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F2o-ge-H7y">
+                                <rect key="frame" x="20" y="816" width="374" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="jvR-ud-MQJ"/>
+                                </constraints>
+                                <state key="normal" title="Take Notes">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Ouv-ch-scg" kind="show" id="JhU-y0-0tg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MlP-Nt-cIX">
+                                <rect key="frame" x="349" y="44" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Po5-Ui-jUd"/>
+                                    <constraint firstAttribute="width" constant="45" id="SAu-de-3XU"/>
+                                </constraints>
+                                <state key="normal" image="accountIcon"/>
+                                <connections>
+                                    <segue destination="9nm-6p-ZCI" kind="show" id="IHM-Wk-5sj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="F2o-ge-H7y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="0UV-nV-6A4"/>
+                            <constraint firstItem="vxg-N2-hC0" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="2vV-nj-sUA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="F2o-ge-H7y" secondAttribute="trailing" constant="20" id="C7r-f4-4qK"/>
+                            <constraint firstItem="vxg-N2-hC0" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Qsp-xu-Blm"/>
+                            <constraint firstItem="MlP-Nt-cIX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="e4P-yP-eiQ"/>
+                            <constraint firstItem="F2o-ge-H7y" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="etH-ma-Yu3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MlP-Nt-cIX" secondAttribute="trailing" constant="20" id="l28-FH-gnX"/>
+                            <constraint firstAttribute="bottom" secondItem="vxg-N2-hC0" secondAttribute="bottom" id="wTY-gi-MnV"/>
+                            <constraint firstItem="vxg-N2-hC0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="yeo-w2-ma7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="profilePicture" destination="MlP-Nt-cIX" id="vdb-yp-xWt"/>
+                        <outlet property="takeNotesButton" destination="F2o-ge-H7y" id="Cuu-GR-Q3i"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="138.61607142857142"/>
+        </scene>
+        <!--login-->
+        <scene sceneID="hKN-pV-9Co">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="login" storyboardName="Login" referencedIdentifier="login" id="9nm-6p-ZCI" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="AcA-2j-KAD"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LN2-gt-bsL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1582" y="-67"/>
+        </scene>
+        <!--HomePageView-->
+        <scene sceneID="qBj-Fd-BPb">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="home" storyboardName="HomePageView" id="Ouv-ch-scg" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="mGO-eK-ZRE"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D3f-gT-EBQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1642" y="31"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="KnightNotes" width="3556" height="4741"/>
+        <image name="accountIcon" width="673" height="673"/>
+    </resources>
+</document>
